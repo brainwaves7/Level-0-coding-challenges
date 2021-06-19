@@ -29,7 +29,5 @@ def time_converter(number):
     else:
         print("No number to convert")
 
-
-    
 time_converter(71)  
 time_converter(133)

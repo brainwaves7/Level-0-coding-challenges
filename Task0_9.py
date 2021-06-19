@@ -1,6 +1,4 @@
-#Task 0.9 (Vowel outputing function)
-print("Task 0.9")
-
+#Task 0.9
 def vowel_in_string (some_string):
     result = []
     vowel =['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
@@ -13,5 +11,4 @@ def vowel_in_string (some_string):
     
     print(f"Vowels: {result}")
 
-    
 vowel_in_string("Umuzi")

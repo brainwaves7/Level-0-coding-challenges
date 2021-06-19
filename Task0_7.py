@@ -1,6 +1,4 @@
-#Task 0.7 (Temperature conversion functions)
-print("Task 0.7")
-
+#Task 0.7
 degrees = 0
 def celsius_to_fahrenheit(deg) :
     degrees = (deg * 9 / 5) + 32

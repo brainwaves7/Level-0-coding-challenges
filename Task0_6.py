@@ -1,6 +1,4 @@
-#Task 0.6 (A function that determines the maximum number)
-print("Task 0.6")
-
+#Task 0.6
 def maximum(a, b, c):
     highest = 0
     if a > b and a > c :

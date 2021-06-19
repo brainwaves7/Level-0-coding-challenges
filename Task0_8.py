@@ -1,6 +1,4 @@
-#Task 0.8 (Number to time converting function)
-print("Task 0.8")
-
+#Task 0.8
 def time_converter(number):
     hours = 0
     minutes = 0

@@ -18,16 +18,8 @@ def time_converter(number):
         print(f"{hours} hour, {minutes} minutes")
     elif hours > 1 and minutes > 1:
         print(f"{hours} hours, {minutes} minutes")
-    elif hours == 0 and minutes == 1:
-        print(f"{minutes} minute")
-    elif hours == 0 and minutes > 1:
-        print(f"{minutes} minutes")
-    elif hours == 1 and minutes == 0:
-        print(f"{hours} hour")
-    elif hours > 1 and minutes == 0:
-        print(f"{hours} hours")
     else:
-        print("No number to convert")
+        print("Have a great day")
 
 time_converter(71)  
 time_converter(133)

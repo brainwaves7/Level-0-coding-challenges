@@ -1,30 +1,12 @@
 #Task 0.6
-def maximum(a, b, c):
-    highest = 0
-    if a > b and a > c :
-        highest = a
-    elif b > a and b > c:
-        highest = b
-    else:
-        highest = c
-    return highest
+def maximum(*a):
+    large = a[0]
+    for element in a:
+        if element >= large:
+            large = element
+    return large
 
 print(maximum(9, 15, 3))
 
-#Bonus addition
-
-def maximum(a, b, c, d):
-    highest = 0
-    if a > b and a > c :
-        highest = a
-    elif b > a and b > c:
-        highest = b
-    else:
-        highest = c
-    
-    if highest < d:
-        highest = d
-    
-    return highest
-
+#Bonus addition works with orginal function
 print(maximum(1, 22, 3, 2))

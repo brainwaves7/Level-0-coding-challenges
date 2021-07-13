@@ -1,15 +1,13 @@
-#Task 0.8
 def time_converter(number):
     hours = 0
     minutes = 0
-    
-    while number >= 60: 
+
+    while number >= 60:
         hours += 1
         number -= 60
-    
-    if number < 60:
-        minutes = number
-    
+
+    minutes = number
+
     if hours == 1 and minutes == 1:
         print(f"{hours} hour, {minutes} minute")
     elif hours > 1 and minutes == 1:
@@ -21,5 +19,6 @@ def time_converter(number):
     else:
         print("Have a great day")
 
-time_converter(71)  
+
+time_converter(71)
 time_converter(133)

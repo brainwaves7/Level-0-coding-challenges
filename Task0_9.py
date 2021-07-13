@@ -1,14 +1,13 @@
-#Task 0.9
-def vowel_in_string (some_string):
+def common_letters(first_word, second_word):
     result = []
-    vowel =['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    some_string = some_string.casefold()
-    
-    for element in some_string:
-        if element in vowel:
-            while element not in result:
-                result.append(element)
-    
-    print(f"Vowels: {result}")
 
-vowel_in_string("Umuzi")
+    for element in second_word:
+        if element in first_word:
+            result.append(element)
+
+    result = ", ".join(result)
+
+    return f"Common letters: {result}"
+
+
+print(common_letters("house", "computers"))

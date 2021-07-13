@@ -1,14 +1,17 @@
-#Task 0.9
-def vowel_in_string (some_string):
+def vowels_in_string(some_string):
     result = []
-    vowel =['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    vowels = ["a", "e", "i", "o", "u"]
+
     some_string = some_string.casefold()
-    
+
     for element in some_string:
-        if element in vowel:
+        if element in vowels:
             while element not in result:
                 result.append(element)
-    
+
+    result = ", ".join(result)
+
     print(f"Vowels: {result}")
 
-vowel_in_string("Umuzi")
+
+vowels_in_string("Umuzi")

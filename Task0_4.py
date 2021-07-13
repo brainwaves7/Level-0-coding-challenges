@@ -1,9 +1,9 @@
-#Task 0.4
 def even_or_odd(num):
     if num % 2 == 0:
-        return'Even'
+        return "even"
     else:
-        return 'Odd'
+        return "odd"
+
 
 print(even_or_odd(3))
 print(even_or_odd(4))

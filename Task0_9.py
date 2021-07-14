@@ -1,10 +1,10 @@
-def vowels_in_string(some_string):
+def vowels_in_string(a_string):
     result = []
     vowels = ["a", "e", "i", "o", "u"]
 
-    some_string = some_string.casefold()
+    a_string = a_string.casefold()
 
-    for element in some_string:
+    for element in a_string:
         if element in vowels:
             while element not in result:
                 result.append(element)

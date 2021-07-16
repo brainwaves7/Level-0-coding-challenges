@@ -12,6 +12,3 @@ def vowels_in_string(a_string):
     result = ", ".join(result)
 
     print(f"Vowels: {result}")
-
-
-vowels_in_string("Umuzi")

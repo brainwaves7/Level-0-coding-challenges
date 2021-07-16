@@ -8,6 +8,3 @@ def common_letters(first_word, second_word):
     result = ", ".join(result)
 
     return f"Common letters: {result}"
-
-
-print(common_letters("house", "computers"))

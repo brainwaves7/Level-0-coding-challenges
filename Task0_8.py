@@ -9,16 +9,18 @@ def time_converter(number):
     minutes = number
 
     if hours == 1 and minutes == 1:
-        print(f"{hours} hour, {minutes} minute")
+        return f"{hours} hour, {minutes} minute"
     elif hours > 1 and minutes == 1:
-        print(f"{hours} hours, {minutes} minute")
+        return f"{hours} hours, {minutes} minute"
     elif hours == 1 and minutes > 1:
-        print(f"{hours} hour, {minutes} minutes")
+        return f"{hours} hour, {minutes} minutes"
     elif hours > 1 and minutes > 1:
-        print(f"{hours} hours, {minutes} minutes")
-    else:
-        print("Have a great day")
+        return f"{hours} hours, {minutes} minutes"
 
 
-time_converter(71)
-time_converter(133)
+def main():
+    print(time_converter(135))
+
+
+if __name__ == "__main__":
+    main()

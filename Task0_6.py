@@ -6,8 +6,6 @@ def maximum(*numbers):
     return largest_number
 
 
-print(maximum(9, 15, 3))
-
-# Bonus addition works with orginal function
-
-print(maximum(1, 22, 3, 2))
+if __name__ == "__main__":
+    print(maximum(9, 15, 3))
+    print(maximum(1, 22, 3, 2))

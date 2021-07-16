@@ -12,6 +12,3 @@ def area_of_a_triangle(side_a, side_b, side_c):
         )
     )
     return area
-
-
-print(area_of_a_triangle(5, 3, 4))

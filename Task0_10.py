@@ -7,4 +7,12 @@ def common_letters(first_word, second_word):
 
     result = ", ".join(result)
 
-    return f"Common letters: {result}"
+    print(f"Common letters: {result}")
+
+
+def main():
+    common_letters("house", "computers")
+
+
+if __name__ == "__main__":
+    main()

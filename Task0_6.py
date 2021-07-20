@@ -3,4 +3,12 @@ def maximum(*numbers):
     for element in numbers:
         if element >= largest_number:
             largest_number = element
-    return largest_number
+    print(largest_number)
+
+
+def main():
+    maximum(1, 22, 3, 2)
+
+
+if __name__ == "__main__":
+    main()

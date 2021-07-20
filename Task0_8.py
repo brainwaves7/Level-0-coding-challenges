@@ -1,12 +1,6 @@
 def time_converter(number):
-    hours = 0
-    minutes = 0
-
-    while number >= 60:
-        hours += 1
-        number -= 60
-
-    minutes = number
+    hours = round(number / 60)
+    minutes = round(number % 60)
 
     if hours == 1 and minutes == 1:
         return f"{hours} hour, {minutes} minute"
@@ -14,7 +8,7 @@ def time_converter(number):
         return f"{hours} hours, {minutes} minute"
     elif hours == 1 and minutes > 1:
         return f"{hours} hour, {minutes} minutes"
-    elif hours > 1 and minutes > 1:
+    else:
         return f"{hours} hours, {minutes} minutes"
 
 

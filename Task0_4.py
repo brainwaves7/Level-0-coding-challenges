@@ -1,5 +1,13 @@
 def even_or_odd(number):
     if number % 2 == 0:
-        return "even"
+        print("even")
     else:
-        return "odd"
+        print("odd")
+
+
+def main():
+    even_or_odd(4)
+
+
+if __name__ == "__main__":
+    main()

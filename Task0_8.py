@@ -1,19 +1,19 @@
 def time_converter(number):
     hours = int(number / 60)
     minutes = int(number % 60)
+    hours_text = ""
+    minutes_text = ""
 
-    if hours == 1 and minutes == 1:
-        return f"{hours} hour, {minutes} minute"
-    elif hours > 1 and minutes == 1:
-        return f"{hours} hours, {minutes} minute"
-    elif hours == 1 and minutes > 1:
-        return f"{hours} hour, {minutes} minutes"
-    elif hours == 1 and minutes < 1:
-        return f"{hours} hour, {minutes} minutes"
-    elif hours < 1 and minutes == 1:
-        return f"{hours} hours, {minutes} minute"
+    if hours != 1:
+        hours_text = "hours"
     else:
-        return f"{hours} hours, {minutes} minutes"
+        hours_text = "hour"
+    if minutes != 1:
+        minutes_text = "minutes"
+    else:
+        minutes_text = "minute"
+
+    return f"{hours} {hours_text}, {minutes} {minutes_text}"
 
 
 def main():
